@@ -62,11 +62,11 @@ final int j = i + 3;
 
 ```java
 String reverse(String arg) {
-    if(arg.length == 0) {
+    if(arg.length() == 0) {
         return arg;
     }
     else {
-        return reverse(arg.substring(1, arg.length)) + arg.substring(0, 1);
+        return reverse(arg.substring(1, arg.length())) + arg.substring(0, 1);
     }
 }
 ```
